@@ -1,0 +1,9 @@
+
+.navigation {
+    margin: 3% 0%;
+    border: 10px;
+    border-radius: 8px;
+    background-color: rgba(16, 144, 216, 0.1);
+    padding-left: 5%;
+    padding-right: 5%;
+}

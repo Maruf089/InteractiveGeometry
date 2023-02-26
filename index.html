@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style/styles.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Assignment!</title>
+  <style>
+    :root {
+      --main-bg-color: brown;
+    }
+
+    .cardBox:hover {
+      border: auto !important;
+      background-color: var(--main-bg-color) !important;
+    }
+
+    a {
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body style="margin-left: 2%; margin-right: 2%; margin-bottom: 4%;">
+
+  <div class="d-flex justify-content-between align-items-center navigation">
+    <div>
+      <h3>Interactive</h3>
+      <h3> Geometry Genious</h3>
+    </div>
+    <div>
+      <button class="btn btn-primary">
+        <a href="/answer.html" target="_blank">Blog</a>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="d-flex flex-column flex-lg-row">
+    <!-- Grid for 6 Card -->
+    <div class="container">
+
+      <div class="row">
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/triangle.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Triangle</h4>
+            <p>Area(A) = 0.5 &#10005; a &#10005; b</p>
+            <div class="input-group mb-3">
+              <input id="triangle1" type="number" class="form-control mr-2 w-25" placeholder="a" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+              <input id="triangle2" type="number" class="form-control ml-2 w-25" placeholder="b" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="triangle" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/rectangle.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Rectangle</h4>
+            <p>Area(A) = w &#10005; l</p>
+            <div class="input-group mb-3">
+              <input id="rectangle1" type="number" class="form-control mr-2 w-25" placeholder="w" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+              <input id="rectangle2" type="number" class="form-control ml-2 w-25" placeholder="l" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="rectangle" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/parallelogram.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Parallelogram</h4>
+            <p>Area(A) = b &#10005; h</p>
+            <div class="input-group mb-3">
+              <input id="parallelogram1" type="number" class="form-control mr-2 w-25" placeholder="b"
+                aria-label="Username" aria-describedby="basic-addon1" />
+              cm
+              <input id="parallelogram2" type="number" class="form-control ml-2 w-25" placeholder="h"
+                aria-label="Username" aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="parallelogram" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- 2nd layer of Grid -->
+      <div class="row">
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/rhombus.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Rhombus</h4>
+            <p>Area(A) = 0.5 &#10005; d1 &#10005; d2</p>
+            <div class="input-group mb-3">
+              <input id="rhombus1" type="number" class="form-control mr-2 w-25" placeholder="d1" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+              <input id="rhombus2" type="number" class="form-control ml-2 w-25" placeholder="d2" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="rhombus" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/pentagon.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Pentagon</h4>
+            <p>Area(A) = 0.5 &#10005; p &#10005; b</p>
+            <div class="input-group mb-3">
+              <input id="pentagon1" type="number" class="form-control mr-2 w-25" placeholder="p" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+              <input id="pentagon2" type="number" class="form-control ml-2 w-25" placeholder="a" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="pentagon" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+        <div class="cardBox card col-lg-4 col-sm-12">
+          <img src="images/ellipse.png" class="img-fluid w-25 mx-auto my-3" alt="..." />
+          <div class="card-body text-center">
+            <h4>Ellipse</h4>
+            <p>Area(A) = π &#10005; a &#10005; b</p>
+            <div class="input-group mb-3">
+              <input id="ellipse1" type="number" class="form-control mr-2 w-25" placeholder="a" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+              <input id="ellipse2" type="number" class="form-control ml-2 w-25" placeholder="b" aria-label="Username"
+                aria-describedby="basic-addon1" />
+              cm
+            </div>
+            <button id="ellipse" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Area Card, Outside of Grid -->
+    <div class="card col-lg-4 col-md-12 col-sm-12">
+      <div class="items-center text-center">
+        <h3 class="card-title"> <u>Area Calculation</u> </h3>
+      </div>
+      <div class="area-content">
+        <ol id="area-list" type='1' style="margin: 0; padding-left: 15px;">
+        </ol>
+      </div>
+    </div>
+
+    <!-- End of Flex for Grid and Area Card -->
+  </div>
+
+
+
+
+
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <!-- Js Function -->
+
+  <script>
+
+    // calculate area
+    function CalculateAreaFunction1(value1, value2) {
+      let area = parseInt(value1) * parseInt(value2);
+      return area;
+    }
+
+    // check for valid input
+    function check(value1, value2) {
+      if (value1 && value2) {
+        if (value1 < 0 || value2 < 0) {
+          alert("Please Enter Valid Number to Calculate Area");
+          return false;
+        }
+        else return true;
+      }
+      else {
+        alert("Please Enter Valid Number to Calculate Area");
+        return false;
+      }
+
+    }
+
+    // access card elements and add area in the Calculation List
+    document.getElementById("ellipse").addEventListener('click', function (e) {
+
+      let value1 = document.getElementById("ellipse1").value;
+      let value2 = document.getElementById("ellipse2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = 3.1416 * CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Ellipse    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+
+    document.getElementById("pentagon").addEventListener('click', function () {
+      let value1 = document.getElementById("pentagon1").value;
+      let value2 = document.getElementById("pentagon2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = 0.5 * CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Pentagon    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+
+    document.getElementById("rhombus").addEventListener('click', function () {
+      let value1 = document.getElementById("rhombus1").value;
+      let value2 = document.getElementById("rhombus2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = 0.5 * CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Rhombus    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+
+    document.getElementById("parallelogram").addEventListener('click', function () {
+      let value1 = document.getElementById("parallelogram1").value;
+      let value2 = document.getElementById("parallelogram2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Parallelogram    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+
+    document.getElementById("rectangle").addEventListener('click', function () {
+      let value1 = document.getElementById("rectangle1").value;
+      let value2 = document.getElementById("rectangle2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Rectangle    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+
+    document.getElementById("triangle").addEventListener('click', function () {
+      let value1 = document.getElementById("triangle1").value;
+      let value2 = document.getElementById("triangle2").value;
+
+      let areaExist = check(value1, value2);
+      if (areaExist) {
+        let Area = 0.5 * CalculateAreaFunction1(value1, value2);
+        Area = Area.toFixed(2);
+        let list = document.getElementById('area-list');
+        let entry = document.createElement('li');
+        entry.classList.add('py-1');
+        entry.innerHTML = `Triangle    ${Area} cm<sup>2</sup>    <button class='btn bg-primary'>Convert to m<sup>2</sup></button>`
+        list.appendChild(entry);
+      }
+    });
+  </script>
+
+  <!-- random color on hover -->
+  <script>
+    var cardBox = document.getElementsByClassName('card');
+    for (var i = 0; i < cardBox.length; i++) {
+      cardBox[i].onmouseenter = function (e) {
+        const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+        document.documentElement.style.setProperty('--main-bg-color', randomColor);
+      }
+    }
+
+  </script>
+
+
+</body>
+
+</html>
