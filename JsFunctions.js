@@ -117,3 +117,13 @@
       list.appendChild(entry);
     }
   });
+
+
+//   <!-- random color on hover -->
+  var cardBox = document.getElementsByClassName('card');
+  for (var i = 0; i < cardBox.length; i++) {
+    cardBox[i].onmouseenter = function (e) {
+      const randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16);
+      document.documentElement.style.setProperty('--main-bg-color', randomColor);
+    }
+  }
