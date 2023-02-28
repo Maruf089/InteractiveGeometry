@@ -1,6 +1,6 @@
  // calculate area
  function CalculateAreaFunction1(value1, value2) {
-    let area = parseInt(value1) * parseInt(value2);
+    let area = value1 * value2;
     return area;
   }
 
